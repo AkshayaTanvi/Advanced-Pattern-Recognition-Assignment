@@ -1,85 +1,65 @@
-# Advanced-Pattern-Recognition-Assignment
+# 🐧 Pearson’s Correlation on Penguins Dataset
 
-Pearson’s Correlation on Penguins Dataset
+## Overview
 
-Overview
+This project demonstrates the application of **Pearson’s Correlation Coefficient** on a real-world dataset.
+We use the **Palmer Penguins dataset** (available via Seaborn) to explore relationships between penguin physical measurements such as **bill length, bill depth, flipper length, and body mass**.
 
-This project demonstrates how to apply Pearson’s Correlation Coefficient on a real-world dataset.
-We use the Palmer Penguins dataset (available via Seaborn) to explore relationships between penguin physical measurements such as bill length, bill depth, flipper length, and body mass.
+---
 
-Dataset
+## Features
 
-Source: Palmer Penguins
+* Compute Pearson’s Correlation Coefficient between two numeric variables
+* Generate a correlation matrix for all numeric features
+* Visualize relationships using pairplots and heatmaps
+* Simple and easy-to-implement statistical analysis
+* Clean, modular, and well-documented code
 
-Features used:
+---
 
-bill_length_mm
+## Tech Stack
 
-bill_depth_mm
+* Python 3.x
+* pandas
+* seaborn
+* scipy
+* matplotlib
 
-flipper_length_mm
+---
 
-body_mass_g
+## Installation
 
-Missing values were removed to ensure accurate correlation analysis.
+1. **Clone the Repository**
 
-Objective
-
-Compute Pearson’s Correlation Coefficient between two numeric variables (e.g., bill_length_mm and flipper_length_mm).
-
-Generate a correlation matrix for all numeric features.
-
-Visualize the relationships using pairplots and a heatmap.
-
-Tools & Libraries
-
-Python 3
-
-pandas
- – data manipulation
-
-seaborn
- – dataset loading & visualization
-
-scipy
- – statistical computation
-
-matplotlib
- – plotting
-
-Expected Output
-
-Correlation coefficient (e.g., ~0.87 for bill length vs flipper length).
-
-P-value indicating statistical significance (usually very small).
-
-Correlation matrix for all four numeric features.
-
-Visualizations:
-
-Pairplot of numeric features.
-
-Heatmap showing correlation strength.
-
-How to Run
-
-Clone this repo:
-
+```bash
 git clone https://github.com/your-username/penguins-correlation.git
 cd penguins-correlation
+```
+2. **Install Dependencies**
 
-
-Install required libraries:
-
+ ```bash
 pip install pandas seaborn scipy matplotlib
+```
 
+## Usage
 
-Run the script:
+1. **To run the correlation analysis:**
 
-python correlation_penguins.py
+```bash
+assign.ipynb
+```
+This will:
 
-Learn More
+* Load the Palmer Penguins dataset
+* Clean missing values
+* Compute Pearson’s Correlation between bill_length_mm and flipper_length_mm
+* Generate a correlation matrix for all four numeric features
+* Display results with pairplots and a heatmap
 
-Pearson’s Correlation Coefficient
-
-Palmer Penguins Dataset
+## Output
+* Correlation coefficient (e.g., ~0.87 for bill length vs flipper length)
+* P-value indicating statistical significance (usually very small)
+* Correlation matrix for all numeric features
+* Visualizations:
+  * Pairplot of numeric features
+  * Heatmap showing correlation strength
